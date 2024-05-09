@@ -13,5 +13,13 @@ form.addEventListener("submit", (event) => {
   // Scenario: Validation when values are missing
   if (!dividend.trim() || !divider.trim()) {
     result.innerText = "Division not performed. Both values are required in inputs. Try again";
-  } 
+  }
+
+  // Scenario: An invalid division should log an error in the console
+  else if (divider === "0") {
+    result.innerText = "Division not performed. Invalid number provided. Try again";
+    throw new Error (
+      "Invalid number provided, cannot use 0"
+    );
+  }
 });
