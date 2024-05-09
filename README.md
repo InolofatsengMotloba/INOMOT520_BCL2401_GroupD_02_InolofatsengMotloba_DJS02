@@ -59,7 +59,7 @@ It is a basic form for inputting two numbers (dividend and divider) and a button
 
 ### Project Outcome
 
-![alt text] (Solution.png)
+![alt text](Solution.png)
 
 1. **Initial State**: On page load, the message “No calculation performed” is displayed, indicating no action has been taken yet.
 2. **Whole Number Division**: Upon submitting two numbers that divide evenly (e.g., 20 divided by 10), the application correctly displays the whole number result.
