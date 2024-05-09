@@ -22,4 +22,13 @@ form.addEventListener("submit", (event) => {
       "Invalid number provided, cannot use 0"
     );
   }
+
+  // Scenario: Providing anything that is not a number should crash the program
+  else if (isNaN(divider) || isNaN(dividend)) {
+    const bodyElement = document.body
+    bodyElement.classList.add("critical-error")
+    bodyElement.textContent = "Something critical went wrong. Please reload the page"
+
+    throw new Error ("Both inputs should be numbers");
+  }
 });
