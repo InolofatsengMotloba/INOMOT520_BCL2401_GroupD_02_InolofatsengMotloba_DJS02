@@ -6,4 +6,7 @@ form.addEventListener("submit", (event) => {
   const entries = new FormData(event.target);
   const { dividend, divider } = Object.fromEntries(entries);
   result.innerText = dividend / divider;
+
+  // Scenario: Dividing numbers result in a decimal number
+  result.innerText = Math.floor(dividend / divider);
 });
